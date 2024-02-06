@@ -9,7 +9,15 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{tsx,ts,js,jsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        sidebarOpen: "var(--sidebar-open-width)",
+        sidebarClose: "var(--sidebar-close-width)",
+      },
+      height: {
+        headerHeight: "var(--header-height)",
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
